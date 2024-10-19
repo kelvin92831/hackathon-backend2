@@ -16,7 +16,7 @@ if (!fs.existsSync(uploadsDir)) {
   fs.mkdirSync(uploadsDir);
 }
 
-//for selectArea / CaptureEntirescree
+//for selectArea / CaptureEntirescree / uploadFile
 app.post('/detect', async (req, res) => {
   try {
     const { image, description, userId } = req.body;
