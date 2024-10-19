@@ -52,7 +52,7 @@ app.post('/detect', async (req, res) => {
     });
 
     fs.unlinkSync(tempFilePath);
-    const type = (response.data.type.ai_generated > 0.5) ? "Fake!" : "Real";
+    const type = (response.data.type.ai_generated > 0.5) ? "Fake!" : "Real!";
 
     res.json({
         status: response.data.status,
