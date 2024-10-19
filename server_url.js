@@ -25,7 +25,13 @@ app.post('/detect', async (req, res) => {
       }
     });
 
-    res.json(response.data);
+    const type = (response.data.type.ai_generated > 0.5) ? "Fake!" : "Real";
+
+    res.json({
+        status: response.data.status,
+        ai_score: response.data.type.ai_generated,
+        prediction: type
+    });
   } catch (error) {
     if (error.response) {
       console.error(error.response.data);
