@@ -8,7 +8,7 @@ app.use(express.json());
 const API_USER = '1788141062';
 const API_SECRET = 'V67k7qzUze2fmw5eXCK8VuDAyYQKAkj9';
 
-app.post('/detect', async (req, res) => {
+app.post('/detectUrl', async (req, res) => {
   try {
     const { imageUrl } = req.body;
 
