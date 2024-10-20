@@ -8,8 +8,8 @@ const app = express();
 
 app.use(express.json({ limit: '50mb' }));  
 
-const API_USER = '1788141062';
-const API_SECRET = 'V67k7qzUze2fmw5eXCK8VuDAyYQKAkj9';
+const API_USER = '602424523';
+const API_SECRET = '8iBmP3WAs9aSf4FnTNcLVrgbB2QJjp9T';
 
 const uploadsDir = path.join(__dirname, 'uploads');
 if (!fs.existsSync(uploadsDir)) {
